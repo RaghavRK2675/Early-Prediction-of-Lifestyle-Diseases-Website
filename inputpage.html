@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <a href="index.html" id="navbar-logo-for-other-pages"><img src="logo_2.png"></a>
+        </nav>
+    </header>
+    <main>
+        <div class="heading">ENTER YOUR DETAILS</div>
+        <div class="main-content-for-input-page-and-other-pages">
+            <form action="outputpage.html" method="GET">
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="name">Name:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="name" name="Name" required placeholder="Enter Your Name">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="age">Age:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="age" name="Age" required placeholder="Enter Your Age">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="bmi">BMI:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="bmi" name="BMI" step="0.1" required placeholder="Enter Your BMI">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="smoking">Smoking:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="smoking" name="Smoking" required>
+                            <option value="no">No</option>
+                            <option value="occasionally">Occasionally</option>
+                            <option value="regularly">Regularly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="alcohol">Alcohol Consumption:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="alcohol" name="AlcoholConsumption" required>
+                            <option value="no">No</option>
+                            <option value="occasionally">Occasionally</option>
+                            <option value="regularly">Regularly</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="physicalActivity">Physical Activity:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="physicalActivity" name="PhysicalActivity" required>
+                            <option value="sedentary">Sedentary</option>
+                            <option value="moderate">Moderate</option>
+                            <option value="active">Active</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="dietType">Diet Type:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="dietType" name="DietType" required>
+                            <option value="balanced">Balanced</option>
+                            <option value="high-protein">High Protein</option>
+                            <option value="high-carb">High Carb</option>
+                            <option value="junk-food">Junk Food</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="sleepHours">Sleep Hours:</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="sleepHours" name="SleepHours" min="0" max="24" required placeholder="Enter Your Sleep Hours">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="stressLevel">Stress Level (1-10):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="stressLevel" name="StressLevel" min="1" max="10" required placeholder="Enter Your Stress Level">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="bloodPressure">Blood Pressure (mmHg):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="bloodPressure" name="BloodPressure" placeholder="Enter your Blood Pressure (e.g., 120/80)" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="cholesterol">Cholesterol Level (mg/dL):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="cholesterol" name="Cholesterol" required placeholder="Enter your Cholesterol" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="familyHistory">Family History of Diseases:</label>
+                    </div>
+                    <div class="input-container">
+                        <select id="familyHistory" name="FamilyHistory" required>
+                            <option value="none">None</option>
+                            <option value="diabetes">Diabetes</option>
+                            <option value="hypertension">Hypertension</option>
+                            <option value="heart-disease">Heart Disease</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="bloodSugar">Blood Sugar Level (mg/dL):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="bloodSugar" name="BloodSugar" required placeholder="Enter your BloodSugar" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-container">
+                        <label for="waistCircumference">Waist Circumference (cm):</label>
+                    </div>
+                    <div class="input-container">
+                        <input type="number" id="waistCircumference" name="WaistCircumference" required placeholder="Enter your WaistCircumference">
+                    </div>
+                </div>
+
+                <a href="outputpage.html" type="submit" id="submit-button">SUBMIT</a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
