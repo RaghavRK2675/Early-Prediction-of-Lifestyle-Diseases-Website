@@ -173,7 +173,7 @@ background-clip: text;
 }
 
 .heading{
-    height: 5%;
+    height: 10%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -249,14 +249,32 @@ input, select{
 .main-content-for-output-page{
     height: 95%;
     width: 100%;
-    border: 1px solid blue;
     display: flex;
 }
 
 #report{
+    border: 1px solid green;
     width: 65%;
     height: 100%;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#report-default-template{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 2;
+}
+
+#report-dynamic-template{
+    width: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,9 +282,9 @@ input, select{
 }
 
 #ai-corner{
+    border-top: 1px solid green;
     width: 35%;
     height: 100%;
-    border: 1px solid cyan;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -276,7 +294,6 @@ input, select{
 #ai-corner-heading{
     width: 100%;
     height: 10%;
-    border: 1px solid rebeccapurple;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -287,7 +304,6 @@ input, select{
 #ai-prompt-box{
     width: 100%;
     height: 15%;
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -296,7 +312,6 @@ input, select{
 #ai-response-box{
     width: 100%;
     height: 75%;
-    border: 1px solid chartreuse;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -305,7 +320,6 @@ input, select{
 .main-content-writing{
     width: 90%;
     height: 100%;
-    border: 1px solid yellow;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -315,7 +329,6 @@ input, select{
 .main-content-heading{
     width: 100%;
     height: 15%;
-    border: 1px solid green;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -326,7 +339,6 @@ input, select{
 .main-content-description{
     width: 100%;
     height: 85%;
-    border: 1px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -337,7 +349,6 @@ input, select{
 .main-content-footer{
     width: 100%;
     height: 10%;
-    border: 1px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
