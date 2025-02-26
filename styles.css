@@ -45,6 +45,9 @@ html,body{
     }
     }
 
+    
+    
+
 header{
     height: 8%;
     border-bottom: 1px solid green;
@@ -65,6 +68,7 @@ nav{
     align-items: center;
     text-decoration: none;
     color: green;
+    cursor: pointer;
 }
 
 .navbar-logo-for-main-page{
@@ -168,8 +172,16 @@ background-clip: text;
     z-index: 2;
 }
 
-.navbar-link:hover, .main-button:hover, #submit-button:hover{
+.main-button:hover, #submit-button:hover{
     transform: scale(1.05);
+}
+
+.navbar-link:hover{
+    color: transparent; /* Ensure text is transparent initially */
+background: linear-gradient(90deg, #4629ff, #d2d4d3, #2199D1, transparent 99.9%);
+background-size: 400% 400%;
+-webkit-background-clip: text;
+background-clip: text;
 }
 
 .heading{
@@ -267,7 +279,7 @@ input, select{
     height: 20%;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     line-height: 2;
 }
@@ -315,6 +327,7 @@ input, select{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .main-content-writing{
@@ -353,4 +366,80 @@ input, select{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    .navbar-link{
+        font-size: 3.1vw;
+        width: 30%;
+    }
+
+    .navbar-logo-for-main-page{
+        width: 40%;
+    }
+
+    .navbar-logo-for-main-page img{
+        width: 99%;
+        height: 55%;
+    }
+
+    #main-text-and-button-box::before {
+        background-size: 99% 75%;
+
+    }
+
+    #main-text{
+        font-size: 8vw;
+    }
+
+    .main-button{
+        font-size: 3vw;
+        width: 45%;
+        height: 10%;
+        position: absolute;
+        top: 65%;
+    }
+
+    #navbar-logo-for-other-pages img{
+        width: 55%;
+        height: 70%;
+    }
+
+    .label-container{
+        font-size: 3.2vw;
+    }
+
+    input, select{
+        font-size: 3vw;
+    }
+
+    #submit-button{
+        font-size: 3.5vw;
+        margin-top: 5%;
+    }
+
+    #report-default-template{
+        align-items: flex-start;
+    }
+
+    #ai-corner-heading{
+        font-size: 4vw;
+    }
+
+    .heading{
+        height: 7%;
+    }
+
+    .main-content-heading{
+        font-size: 2.8vw;
+        
+    }
+
+    .main-content-description{
+        font-size: 3vw;
+    }
+
+    .main-content-footer{
+        font-size: 2.7vw;
+    }
 }
